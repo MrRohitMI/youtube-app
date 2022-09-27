@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <style>
+       #container{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           gap: 20px;
+       }
+       img{
+           width: 100%;
+           height: 50%;
+       }
+       #popular{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           gap:20px;
+       }
+      .icon{
+        width: 20px;
+      }
+      #navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid grey; */
+      }
+      #yt{
+        display: flex
+      }
+      #llogo{
+        display: flex;
+        width: 220px;
+        justify-content: space-between;
+        /* border: 1px red solid; */
+      }
+      #rlogo{
+        display: flex;
+        width: 260px;
+        /* border: solid 1px black; */
+        justify-content: space-between;
+      }
+      input{
+        height: 40px;
+        width: 580px;
+      }
+      sup{
+        font-size: small;
+      }
+      button{
+        height: 46px;
+      }
+      #clogo{
+        display: flex;
+      }
+      h1{
+        margin-top: -5px;
+      }
+      .ycon{
+        width: 30px;
+        height: 30px;
+      }
+      
+      
+      
+    </style>
+</head>
+<body>
+    <div id="navbar">
+     
+        <div id="llogo">
+    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="line">
+    <div id="yt">
+        <img class="ycon" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Logo">
+        <h1>YouTube<sup>IN</sup></h1>
+    </div>
+        </div>
+        <div id="clogo">
+    <input type="text" id="query" placeholder="Search">
+    <button onclick="getdata()">Search</button>
+</div>
+<div id="rlogo">
+    <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOAte392b_iUmfx_nbLYTkKMHI0jwmOJ-RRg&usqp=CAU" alt="">
+    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3603/3603178.png" alt="grid">
+    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3602/3602123.png" alt="bell">
+    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="user">
+    </div>
+    </div>
+    <div id="container"></div>
+    <div id="popular"></div>
+</body>
+<script src="index.js"></script>
+</html>
