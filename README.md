@@ -1,6 +1,6 @@
 # Youtube App
 
-# Project Title
+# Project Discription
 
 Created a basic youtube app where you can search and watch videos
 
